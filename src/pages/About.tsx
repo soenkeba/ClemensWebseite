@@ -49,21 +49,22 @@ export const About = () => {
 
       <Section title={t.about.sectionsTitle}>
         <div className="about-sections">
-          {t.about.sections.map((section) => (
-            <div
-              key={section.title}
-              className={`about-section${
-                section.variant === 'long' ? ' long-list' : ''
-              }`}
-            >
-              <h3>{section.title}</h3>
-              <ul>
-                {section.entries.map((entry) => (
-                  <li key={entry}>{entry}</li>
-                ))}
-              </ul>
-            </div>
-          ))}
+          {t.about.sections.map((section) => {
+            const isLong = 'variant' in section && section.variant === 'long'
+            return (
+              <div
+                key={section.title}
+                className={`about-section${isLong ? ' long-list' : ''}`}
+              >
+                <h3>{section.title}</h3>
+                <ul>
+                  {section.entries.map((entry) => (
+                    <li key={entry}>{entry}</li>
+                  ))}
+                </ul>
+              </div>
+            )
+          })}
         </div>
       </Section>
     </div>
