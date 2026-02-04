@@ -24,22 +24,21 @@ const ScrollToTop = () => {
 const AppShell = () => {
   const { locale } = useLocale()
   const t = content[locale]
-  const navItems = [
+  const mainNavItems = [
     { path: '/', label: t.nav.home },
+    { path: '/consultation', label: t.nav.consultation },
     { path: '/certification', label: t.nav.certification },
     { path: '/education', label: t.nav.education },
-    { path: '/consultation', label: t.nav.consultation },
-    { path: '/news', label: t.nav.news },
     { path: '/about', label: t.nav.about },
     { path: '/contact', label: t.nav.contact },
-    { path: '/impressum', label: t.nav.impressum },
   ]
+  const footerNavItems = [...mainNavItems, { path: '/impressum', label: t.nav.impressum }]
 
   return (
     <div className="app">
       <div className="background-orb orb-one" />
       <div className="background-orb orb-two" />
-      <SiteHeader logoUrl={logoUrl} tagline={t.meta.siteTagline} navItems={navItems} />
+      <SiteHeader logoUrl={logoUrl} tagline={t.meta.siteTagline} navItems={mainNavItems} />
       <main className="main-content">
         <Routes>
           <Route path="/" element={<Home />} />
@@ -53,7 +52,7 @@ const AppShell = () => {
         </Routes>
       </main>
       <SiteFooter
-        navItems={navItems}
+        navItems={footerNavItems}
         companyName={sharedContent.company.name}
         addressLines={sharedContent.company.addressLines}
         phone={sharedContent.company.phone}
