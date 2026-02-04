@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom'
+import { HashRouter, Route, Routes, useLocation } from 'react-router-dom'
 import { useEffect } from 'react'
 import { SiteHeader } from './components/SiteHeader'
 import { SiteFooter } from './components/SiteFooter'
@@ -71,10 +71,10 @@ const AppShell = () => {
 
 const App = () => (
   <LocaleProvider>
-    <BrowserRouter>
+    <HashRouter>
       <ScrollToTop />
       <AppShell />
-    </BrowserRouter>
+    </HashRouter>
   </LocaleProvider>
 )
 
