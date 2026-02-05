@@ -1,7 +1,9 @@
+import logoFileUrl from '../Clemenswebseitematerial/Firmenlogo.svg'
+import professorPortraitUrl from '../Clemenswebseitematerial/KIRN_Portrait_Kaiser_Clemens_210802_081.jpg'
+
 export type Locale = 'de' | 'en'
 
-export const logoUrl =
-  'https://www.mamma-mrt-screening.de/ma-wGlobal/wGlobal/layout/images/logo-mmz.svg'
+export const logoUrl = logoFileUrl
 
 export const stockImages = {
   homeHero:
@@ -24,7 +26,7 @@ export const stockImages = {
 
 const shared = {
   company: {
-    name: 'Kaiser MRT-Zertifizierung GmbH',
+    name: 'QMRM GmbH',
     addressLines: ['Musterstraße 12', '68161 Mannheim', 'Deutschland'],
     phone: '+49 621 123 45 67',
     email: 'kontakt@kaiser-mrt-zertifizierung.de',
@@ -37,8 +39,7 @@ const shared = {
     credentials: 'Dipl. Kfm. (EMA), B.A.',
     phone: '0621-383-8694',
     email: 'mmz@umm.de',
-    imageUrl:
-      'https://www.mamma-mrt-screening.de/ma-wAssets/img/persons/weblication/wThumbnails/Portrait_Prof_Kaiser_Clemens-622ac716-a9528119@ll.jpg',
+    imageUrl: professorPortraitUrl,
     linkedinUrl:
       'https://linkedin.com/in/prof-dr-med-clemens-kaiser-1b765212a?trk=people-guest_people_search-card',
     quoteDe:
@@ -51,8 +52,8 @@ const shared = {
 export const content = {
   de: {
     meta: {
-      siteTitle: 'Kaiser MRT-Zertifizierung GmbH',
-      siteTagline: 'Zertifizierung, Weiterbildung, Beratung',
+      siteTitle: 'QMRM GmbH',
+      siteTagline: 'Zertifizierung · Zweitmeinung · Ausbildung',
     },
     footer: {
       navigation: 'Navigation',
@@ -64,61 +65,75 @@ export const content = {
       taxNumberLabel: 'Steuernummer',
     },
     nav: {
-      home: 'Start',
+      home: 'MR-Max (Mr Ausbildungssoftware)',
       certification: 'Zertifizierung',
-      education: 'Weiterbildung',
-      consultation: 'Beratung',
+      education: 'Kurse',
+      consultation: 'Zweitmeinungsportal',
       news: 'News',
-      about: 'Prof. Kaiser',
+      about: 'Wir über uns',
       contact: 'Kontakt',
       impressum: 'Impressum',
     },
     home: {
       hero: {
-        eyebrow: 'Mamma-MRT Zertifizierung',
-        title: 'Qualität, die sichtbar wird.',
+        eyebrow: 'Kompetenzzentrum Mamma-MRT',
+        title: 'QMRM – Qualität und Sicherheit in der Brustbildgebung.',
         subtitle:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non lacus eget nulla tincidunt placerat.',
+          'Wir verbinden MR-Max Ausbildungssoftware, Zweitmeinungsportal, Zertifizierung und Kurse, damit Radiologien Mamma-MRT zuverlässig, effizient und evidenzbasiert anbieten können.',
         primaryCta: 'Zertifizierung starten',
-        secondaryCta: 'Beratung anfragen',
+        secondaryCta: 'Zweitmeinung anfragen',
+        badges: ['Evidenzbasiert', 'Qualitätsgesichert', 'Interdisziplinär', 'Fortbildung inklusive'],
+        portraitLabel: 'Medizinische Leitung',
       },
       highlights: {
-        title: 'Unser Ansatz',
+        title: 'Leistungsfelder',
         subtitle:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sapien id augue tempor tristique.',
+          'Unsere Angebote rund um Mamma-MRT, Qualitätssicherung und Weiterbildung.',
         items: [
           {
-            title: 'Prüfbare Standards',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nec sapien.',
+            title: 'MR-Max Ausbildungssoftware',
+            text: 'Interaktive Fallbibliothek, strukturierte Prüfungen und Protokollwissen für eine sichere Befundung.',
           },
           {
-            title: 'Praxisnahe Weiterbildung',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim sem sed.',
+            title: 'Zweitmeinungsportal',
+            text: 'Standardisierte Zweitbefundung durch erfahrene Expert:innen mit nachvollziehbaren Empfehlungen.',
           },
           {
-            title: 'Individuelle Beratung',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.',
+            title: 'Zertifizierung',
+            text: 'Auditierung von Zentren, definierte Qualitätskriterien und kontinuierliches Monitoring.',
+          },
+          {
+            title: 'Kurse & Workshops',
+            text: 'Fortbildungen für Radiolog:innen und MTR – praxisnah, modular und evidenzbasiert.',
+          },
+          {
+            title: 'Protokolle & Technik',
+            text: 'Optimierte MR-Protokolle, DWI und Kontrastmittelstrategien für hohe Bildqualität.',
+          },
+          {
+            title: 'Beratung & Implementierung',
+            text: 'Begleitung beim Aufbau oder der Optimierung eines Mamma-MRT-Angebots.',
           },
         ],
       },
       pathways: {
-        title: 'Zertifizierungspfad',
+        title: 'So arbeiten wir zusammen',
         subtitle:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a est a ante efficitur.',
+          'Ein klarer Ablauf von der Bestandsaufnahme bis zur laufenden Qualitätssicherung.',
         steps: [
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          'Pellentesque habitant morbi tristique senectus et netus.',
-          'Integer tincidunt nisi quis justo efficitur, vitae bibendum.',
-          'Sed posuere metus in aliquet laoreet.',
+          'Kick-off & Bestandsaufnahme: Technik, Personal, Prozesse.',
+          'Schulung & MR-Max Training für Ärzt:innen und MTR.',
+          'Zertifizierung und Audits nach QMRM-Standard.',
+          'Kontinuierliche Qualitätssicherung & Zweitmeinungen.',
         ],
       },
       quote: {
         title: 'Stimmen aus der Praxis',
       },
       news: {
-        title: 'Aktuelles',
+        title: 'Aktuelles & Wissen',
         subtitle:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at augue eget.',
+          'Updates aus Forschung, Kursprogramm und Qualitätsstandards.',
       },
     },
     certification: {
@@ -196,19 +211,19 @@ export const content = {
       },
       items: [
         {
-          title: 'Lorem ipsum dolor sit amet',
-          date: '04.02.2026',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium.',
+          title: 'Neue Kursreihe: Mamma-MRT kompakt',
+          date: '02.02.2026',
+          text: 'Praxisnahe Module für Radiolog:innen und MTR mit Fokus auf Bildqualität und Befundung.',
         },
         {
-          title: 'Integer vitae justo nec',
-          date: '22.01.2026',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum.',
+          title: 'QMRM-Standard aktualisiert',
+          date: '20.01.2026',
+          text: 'Neue Empfehlungen zu Protokollen, DWI und Qualitätsindikatoren.',
         },
         {
-          title: 'Suspendisse potenti gravida',
-          date: '08.01.2026',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate.',
+          title: 'Zweitmeinungsportal mit strukturierter Rückmeldung',
+          date: '05.01.2026',
+          text: 'Standardisierte Befundung und klare Empfehlungen für klinische Entscheidungen.',
         },
       ],
     },
@@ -226,6 +241,132 @@ export const content = {
         phoneLabel: 'Telefon',
         emailLabel: 'E-Mail',
         linkedinLabel: 'LinkedIn',
+      },
+      timeline: {
+        person: {
+          name: 'Prof. Dr. med. Clemens Kaiser',
+          yearsOrTagline: 'Sektionsleiter Mammadiagnostik UMM',
+          subtitleLine: 'Oberarzt, Klinik fuer Radiologie und Nuklearmedizin',
+          subtitleLine2: 'Universitaetsmedizin Mannheim',
+        },
+        // Timeline events: edit or replace these items as needed.
+        events: [
+          {
+            year: '2010',
+            title: 'Dissertation',
+            text:
+              'Duct-Obstruction-Sign: DCIS vs. Papillom in der MR-Mammographie (FSU Jena).',
+          },
+          {
+            year: '2011',
+            title: 'Fachgesellschaften',
+            text: 'Mitgliedschaften: DRG, RSNA und ESR.',
+          },
+          {
+            year: '2013',
+            title: 'Research Rotation',
+            text: 'Radiologie, Universitaetsklinikum Jena.',
+          },
+          {
+            year: '2014',
+            title: 'Mamma-MRT Standards',
+            text:
+              'Schwerpunkt auf standardisierter Befundung und Protokollqualitaet.',
+          },
+          {
+            year: '2015',
+            title: 'Qualitaet & Befundung',
+            text:
+              'Fokus auf diagnostische Zeichen und strukturierte Befundung.',
+          },
+          {
+            year: '2016',
+            title: 'Degum Mitglied',
+            text: 'Deutsche Gesellschaft fuer Ultraschall in der Medizin.',
+          },
+          {
+            year: '2016',
+            title: 'Gutachtertaetigkeit',
+            text: 'Beginn als Reviewer fuer Fachzeitschriften.',
+          },
+          {
+            year: '2016',
+            title: 'Hochschuldidaktik',
+            text: 'Baden-Wuerttemberg Zertifikat (MQ 1 & 2).',
+          },
+          {
+            year: '2017',
+            title: 'Research Rotation',
+            text: 'DKFZ Heidelberg, Abteilung Radiologie.',
+          },
+          {
+            year: '2019',
+            title: 'Habilitation',
+            text:
+              'Optimierung der MR-Mammographie auf dem Weg zur Screening-Methode.',
+          },
+          {
+            year: '2019',
+            title: 'Studienleitung',
+            text: 'Principal investigator: USCT und MA-DETECT.',
+          },
+          {
+            year: '2020',
+            title: 'Mamma-MRT Oekonomie',
+            text:
+              'Kosten-Nutzen-Analysen der MR-Mammographie (u.a. TK-Study).',
+          },
+          {
+            year: '2021',
+            title: 'Screening & Dichte Brueste',
+            text:
+              'Evidenz zu Abbreviated MRI und Screening bei dichtem Gewebe.',
+          },
+          {
+            year: '2021',
+            title: 'Technik & Sequenzen',
+            text:
+              'Arbeiten zu beschleunigten Sequenzen und Bildqualitaet in der Mamma-MRT.',
+          },
+          {
+            year: 'Heute',
+            title: 'Leitung & Expertise',
+            text:
+              'Sektionsleiter Mammadiagnostik, >10.000 Mamma-MRT Befundungen.',
+          },
+        ],
+      },
+      team: {
+        title: 'Team',
+        subtitle:
+          'Ein spezialisiertes Team aus medizinischer Leitung, Radiolog:innen und administrativer Assistenz.',
+        leadLabel: 'Medizinische Leitung',
+        assistantLabel: 'Administrative Assistenz (Platzhalter)',
+        radiologistsLabel: 'Fachradiolog:innen (Platzhalter)',
+        leadHighlights: [
+          'Langjaehrige Erfahrung in der Mamma-MRT',
+          'Qualitaetssicherung und Befundungsstandards',
+          'Forschung und Lehre in der Mammadiagnostik',
+          'Interdisziplinaere Beratung',
+        ],
+        assistantHighlights: [
+          'Koordination von Terminen und Kommunikation',
+          'Unterstuetzung von Kursen und Veranstaltungen',
+          'Organisation von Zertifizierungsunterlagen',
+        ],
+        radiologistHighlights: [
+          'Spezialisierte Befundung der Mamma-MRT',
+          'Zweitmeinungen mit strukturierter Rueckmeldung',
+          'Training und Supervision in MR-Max',
+        ],
+        detailsTitle: 'Vita & Publikationen',
+        detailsIntro:
+          'Vollstaendige Vita-Informationen sind aufklappbar. Platzhalter werden spaeter ersetzt.',
+        detailsLeadSummary: 'Vollstaendige Vita von Prof. Kaiser anzeigen',
+        detailsAssistantSummary: 'Vita Administrative Assistenz (Platzhalter)',
+        detailsRadiologistsSummary: 'Vita Fachradiolog:innen (Platzhalter)',
+        detailsPlaceholderText:
+          'Platzhalter fuer Ausbildung, Stationen, Schwerpunkte und Publikationen.',
       },
       sectionsTitle: 'Curriculum Vitae & Publikationen',
       sections: [
@@ -283,26 +424,26 @@ export const content = {
           title: 'Publikationen',
           variant: 'long',
           entries: [
-            '1. Kaiser CG, Peschke P, Baltzer PAT. Axillary lymph node characterization in breast cancer patients using magnetic resonance imaging and diffusion weighted imaging (DWI). Eur J Radiol. 2013;82:2194-2198. Impact factor: 2,518',
-            '2. Kaiser CG, Dietzel M, Fantini L, Baltzer PAT. Evaluation of presurgical breast MRI: are the standards being met? Springerplus. 2014;3:401. Impact factor 0.7',
-            '3. Meyer B, Meyer H, Nordsiek C, et al. A superior vena cava filter device for neurosurgical patients with contraindication to heparin. Surg Neurol Int. 2014;5:113. Impact factor 0.74',
-            '4. Kaiser CG, Borstelmann F, Länger F, et al. Cost effectiveness of MR-mammography as a solitary imaging technique in women with dense breasts: an economic evaluation of the TK-Foundation\'s mammography-screening-cohort. Springerplus. 2015;4:299. Impact factor 0.7',
-            '5. Müller H, Steinbach JP, Malzkorn B, et al. Bevacizumab in combination with radiosurgery in recurrent malignant glioma: analysis of a matched cohort. J Neurooncol. 2015;122:373-379. Impact factor 2.9',
-            '6. Kaiser CG, Borstelmann F, Länger F, et al. Cost-effectiveness of MR-mammography as a solitary imaging technique in women with dense breasts: an economic evaluation. PLoS One. 2015;10:e0141315. Impact factor 3.057',
-            '7. Kaiser CG, Heinrich D, Bahrs A, et al. Evaluation of the BI-RADS categorization of breast ultrasound. SpringerPlus. 2016;5:188. Impact factor 1.63',
-            '8. Kaiser CG, Baltzer PAT, Dietzel M, et al. Diffusion-weighted imaging of the breast: results of a multicenter study. Eur J Radiol. 2016;85(6):974-981. Impact factor 2.524',
-            '9. Kaiser CG, Baltzer PAT, Dietzel M, et al. Dynamic contrast-enhanced MR imaging of the breast: is there any additional value of the first post-contrast series? Eur J Radiol. 2016;85(5):976-983. Impact factor 2.524',
-            '10. Kaiser CG, Renz DM, Baltzer PAT, et al. Implementing a MR-mammography screening program for women with a familial history of breast cancer: breast cancer detection and tumor stage at diagnosis. SpringerPlus. 2016;5:189. Impact factor 1.63',
-            '11. Kaiser CG, Dietzel M, Baltzer PAT. Breast cancer detection and tumor stage at diagnosis in women at familial risk for breast cancer after implementing an MR-mammography screening program: a systematic review and meta-analysis. PLoS One. 2016;11:e0148256. Impact factor 3.057',
-            '12. Kaiser CG, Fuchsjäger MH, Baltzer PAT. Duct-Obstruction-Sign: new MR-mammography sign for the differential diagnosis of duct ectasia and DCIS. Breast J. 2017;23(6):703-709. Impact factor 2.652',
-            '13. Strobel K, Kaiser CG, Paulsen F, et al. MRI results of an intensified surveillance program for women with a familial history of breast cancer. Clin Radiol. 2017;72(7):620.e1-620.e7. Impact factor 2.311',
-            '14. Kaiser CG, Dietzel M, Baltzer PAT. Evaluation of non mass enhancement descriptors in the differential diagnosis of breast lesions: a pilot study. Eur J Radiol. 2017;96:82-91. Impact factor 2.524',
-            '15. Kaiser CG, Kähne T, Häberle L, et al. MR-mammography in the diagnostic assessment of BI-RADS 4 lesions. SpringerPlus. 2017;6:85. Impact factor 1.63',
-            '16. Baltzer PAT, Kaiser CG, Dietzel M, et al. Potential of mammography for the discrimination of breast cancer molecular subtypes. Breast Cancer Res Treat. 2017;166(3):735-745. Impact factor 4.123',
-            '17. Grimm LJ, Anderson AL, Baker JA, Johnson KS, Walsh R, Sykora J, Gutierrez RL, Camp M, Brem RF, Rapelyea J, Weinstein SP, Conant EF, Herschorn SD, Pritchard JW, Synnestvedt MB, Moy L. Breast imaging reporting and data system (BI-RADS) assessment categories and breast cancer diagnosis: a meta-analysis. Eur Radiol. 2017;27(9):3537-3544. Impact factor 4.027',
-            '18. Renz DM, Baltzer PAT, Kaiser CG. Clinical management of radial scars without atypia diagnosed at percutaneous breast biopsy: an online survey and literature review. SpringerPlus. 2018;7:167. Impact factor 1.63',
-            '19. Bayerl C, Kaiser CG, Hummel M, et al. Sensitivity of MRI versus mammography for detecting foci of multifocal, multicentric breast cancer in routine clinical practice. Eur J Radiol. 2018;99:118-124. Impact factor 2.624',
-            '20. Kaiser CG, Baltzer PAT, Bick U, et al. Comparison of different MR imaging protocol paradigms for the detection of suspicious findings in breast MRI: a prospective randomized clinical trial. The Breast. 2019;43:102-109. Impact factor 2.987',
+            '1. Axillary lymph node characterization in breast cancer patients using magnetic resonance mammography: a prospective comparative study with FDG PET-CT and healthy women. J. Krammer, K. Wasser, A. Schnitzer, T. Henzler, S. Schoenberg, Kaiser CG. Eur J Radiol. 2013;82:2194-2198. Impact factor: 2,518',
+            '2. Is "prepectoral edema" a morphologic sign for malignant breast tumors? C.G. Kaiser, M. Herold, P. Baltzer, M. Dietzel, J. Krammer, M. Gajda, O. Camara, S.O. Schoenberg, W.A. Kaiser, K. Wasser. Acad Radiol. 22 (2015) 684-689. Impact factor: 1,966',
+            '3. Magnetic resonance imaging of intraductal papillomas: typical findings and differential diagnosis. M. Dietzel, C.G. Kaiser*, P. Baltzer. J Comput Assist Tomogr. 39 (2015) 176-184. Impact factor: 1,470',
+            '4. DCE-MRI of the breast in a stand-alone setting outside a complementary strategy results of the TK-study. C.G. Kaiser, C. Reich, M. Dietzel, P.A.T. Baltzer, J. Krammer, K. Wasser, S.O. Schoenberg, W.A. Kaiser. Eur Radiol. 25 (2015) 1793-1800. Impact factor: 3,64',
+            '5. Focal transitional mastitis in MR-mammography: preliminary findings. C.G. Kaiser*, M. Dietzel, P. Baltzer, A. Kaiser, T. Henzler, W.A. Kaiser, J. Krammer. European Journal of Radiology Open 3 (2016): 117-22. Impact factor: 3,528',
+            '6. The value of "constant sharpness" as a diagnostic sign in MR-Mammography. C.G. Kaiser, P. Baltzer, A.K. Kaiser, J. Krammer, M. Uder, W.A. Kaiser, M. Dietzel. Eur J Radiol Open. 3 (2016) 236-238. Impact factor: 3,52',
+            '7. Differentiation of ductal carcinoma in situ versus fibrocystic changes by magnetic resonance imaging: are there pathognomonic imaging features? M. Dietzel, C.G. Kaiser*, E. Wenkel, P. Clauser, M. Uder, R. Schulz-Wendtland, P.A. Baltzer. Acta Radiol. (2017) 284185117690420. Impact factor: 2,009',
+            '8. Prognostic Value of "Prepectoral Edema" in MR-Mammography. C.G. Kaiser, M. Herold, J. Krammer, P. Baltzer, M. Gajda, O. Camara, S. Schoenberg, W.A. Kaiser, M. Dietzel. Anticancer Res. 37 (2017) 1989-1995. Impact factor: 1.895',
+            '9. The Assessment of Background Parenchymal Enhancement (BPE) in a High-Risk Population: What Causes BPE? C. You, A. K. Kaiser, P. Baltzer, J. Krammer, Y. Gu, W. Peng, S. Schoenberg, C.G. Kaiser. Translational Oncology 11, No. 2 (2018): 243-49. Impact factor: 3,025',
+            '10. Value of ductal obstruction sign in the differentiation of benign and malignant breast lesions at MR imaging. P.A.T. Baltzer, C.G. Kaiser, M. Dietzel, T. Vag, A.B. Herzog, M. Gajda, O. Camara, W.A. Kaiser. Eur J Radiol. 2010;75:e18-e21. Impact factor: 2,518',
+            '11. Combined reading of Contrast Enhanced and Diffusion Weighted Magnetic Resonance Imaging by using a simple sum score. A. Baltzer, M. Dietzel, C.G. Kaiser, P.A. Baltzer. Eur Radiol. (2015). Impact factor: 3,64',
+            '12. Perirenal Edema as a potential hint towards primary hypertension-Preliminary findings in MRI breast cancer staging. C.G. Kaiser, P. Baltzer, A.K. Kaiser, J. Knaudt, T. Henzler, W.A. Kaiser, M. Dietzel. Eur J Radiol Open. 3 (2016) 123-126. Impact factor: 3,528',
+            '13. Cost-effectiveness of MR-mammography as a solitary imaging technique in women with dense breasts: an economic evaluation of the prospective TK-Study. Froelich MF, Kaiser CG (2020) Eur Radiol 31:967-974. Impact factor: 5.315',
+            '14. Cost-effectiveness of MR-Mammography vs. conventional Mammography in screening patients at intermediate risk of breast cancer - A model-based economic evaluation. Kaiser CG, Dietzel M, Vag T, Froelich MF (2020) Eur J Radiol 136:109355. Impact factor: 2.687',
+            '15. Impact of specificity on cost-effectiveness of screening women at high risk of breast cancer with magnetic resonance imaging, mammography and ultrasound. Kaiser CG, Dietzel M, Vag T, Ruebenthaler J, Froelich M, Tollens F (2021) Eur J Radiol 137:109576. Impact factor: 2.687',
+            '16. Cost-Effectiveness of Digital Breast Tomosynthesis vs. Abbreviated Breast MRI for Screening Women with Intermediate Risk of Breast Cancer-How Low-Cost Must MRI Be? Tollens F, Baltzer PAT, Dietzel M, Ruebenthaler J, Froelich M, Kaiser CG (2021) Cancers 13:1241. Impact factor: 6.639',
+            '17. T2-weighted Imaging of the Breast at 1.5T Using Simultaneous Multi-slice Acceleration. Riffel J, Kannengiesser S, Schoenberg SO, Overhoff D, Riffel P, Kaiser CG (2021) Anticancer Res 41:4423-4429. Impact factor: 2.480',
+            '18. Cost-Effectiveness of MR-Mammography in Breast Cancer Screening of Women With Extremely Dense Breasts After Two Rounds of Screening. Tollens F, Baltzer PAT, Dietzel M, Kunz W, Ruebenthaler J, Froelich M, Kaiser CG (2021) Frontiers in Oncology 11:3449. Impact factor: 6.244',
+            '19. Motion artifacts, lesion type, and parenchymal enhancement in breast MRI: what does really influence diagnostic accuracy? Clauser P, Dietzel M, Weber M, Kaiser CG, Baltzer PAT (2019) Acta Radiol 60:19-27. Impact factor: 1,603',
+            '20. Cost-effectiveness analysis in radiology: methods, results and implications. Froelich MF, Kunz WG, Tollens F, Schnitzer ML, Schoenberg SO, Kaiser CG, Ruebenthaler J, Rofo. (2021) Impact factor: 1,867',
           ],
         },
       ],
@@ -335,7 +476,7 @@ export const content = {
         sections: [
           {
             title: 'Angaben gemäß § 5 TMG',
-            text: 'Kaiser MRT-Zertifizierung GmbH\nMusterstraße 12\n68161 Mannheim\nDeutschland',
+            text: 'QMRM GmbH\nMusterstraße 12\n68161 Mannheim\nDeutschland',
           },
           {
             title: 'Vertreten durch',
@@ -367,8 +508,8 @@ export const content = {
   },
   en: {
     meta: {
-      siteTitle: 'Kaiser MRI Certification GmbH',
-      siteTagline: 'Certification, Education, Consulting',
+      siteTitle: 'QMRM GmbH',
+      siteTagline: 'Certification · Second Opinion · Training',
     },
     footer: {
       navigation: 'Navigation',
@@ -380,61 +521,75 @@ export const content = {
       taxNumberLabel: 'Tax number',
     },
     nav: {
-      home: 'Home',
+      home: 'MR-Max (Mr Ausbildungssoftware)',
       certification: 'Certification',
-      education: 'Education',
-      consultation: 'Consulting',
+      education: 'Courses',
+      consultation: 'Second opinion portal',
       news: 'News',
-      about: 'Prof. Kaiser',
+      about: 'About us',
       contact: 'Contact',
       impressum: 'Imprint',
     },
     home: {
       hero: {
-        eyebrow: 'Breast MRI Certification',
-        title: 'Quality that becomes visible.',
+        eyebrow: 'Breast MRI Center of Excellence',
+        title: 'QMRM – Quality and confidence in breast imaging.',
         subtitle:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non lacus eget nulla tincidunt placerat.',
+          'We combine MR-Max training software, second-opinion services, certification, and courses so radiology teams can deliver breast MRI reliably, efficiently, and evidence-based.',
         primaryCta: 'Start certification',
-        secondaryCta: 'Request consulting',
+        secondaryCta: 'Request second opinion',
+        badges: ['Evidence-based', 'Quality assured', 'Interdisciplinary', 'Training included'],
+        portraitLabel: 'Medical leadership',
       },
       highlights: {
-        title: 'Our approach',
+        title: 'Core services',
         subtitle:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed sapien id augue tempor tristique.',
+          'Everything around breast MRI, quality assurance, and education.',
         items: [
           {
-            title: 'Auditable standards',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at felis nec sapien.',
+            title: 'MR-Max training software',
+            text: 'Interactive case library, structured assessments, and protocol knowledge for confident reporting.',
           },
           {
-            title: 'Practice-led education',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer dignissim sem sed.',
+            title: 'Second-opinion portal',
+            text: 'Structured second reads by experienced experts with clear recommendations.',
           },
           {
-            title: 'Tailored consulting',
-            text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse potenti.',
+            title: 'Certification',
+            text: 'Center audits, defined quality criteria, and continuous monitoring.',
+          },
+          {
+            title: 'Courses & workshops',
+            text: 'Practical training for radiologists and technologists — modular and evidence-based.',
+          },
+          {
+            title: 'Protocols & technology',
+            text: 'Optimized MRI protocols, DWI and contrast strategies for high image quality.',
+          },
+          {
+            title: 'Consulting & implementation',
+            text: 'Guidance to set up or optimize a breast MRI service.',
           },
         ],
       },
       pathways: {
-        title: 'Certification pathway',
+        title: 'How we work together',
         subtitle:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque a est a ante efficitur.',
+          'A clear workflow from assessment to continuous quality assurance.',
         steps: [
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-          'Pellentesque habitant morbi tristique senectus et netus.',
-          'Integer tincidunt nisi quis justo efficitur, vitae bibendum.',
-          'Sed posuere metus in aliquet laoreet.',
+          'Kick-off & baseline review: technology, staff, processes.',
+          'Training & MR-Max education for radiologists and technologists.',
+          'Certification and audits based on the QMRM standard.',
+          'Ongoing quality assurance & second opinions.',
         ],
       },
       quote: {
         title: 'From the field',
       },
       news: {
-        title: 'Latest',
+        title: 'Updates & insights',
         subtitle:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris at augue eget.',
+          'Updates from research, course program, and quality standards.',
       },
     },
     certification: {
@@ -512,19 +667,19 @@ export const content = {
       },
       items: [
         {
-          title: 'Lorem ipsum dolor sit amet',
-          date: '04 Feb 2026',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pretium.',
+          title: 'New course series: Breast MRI essentials',
+          date: '02 Feb 2026',
+          text: 'Hands-on modules for radiologists and technologists focused on quality and reporting.',
         },
         {
-          title: 'Integer vitae justo nec',
-          date: '22 Jan 2026',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dictum.',
+          title: 'QMRM standard updated',
+          date: '20 Jan 2026',
+          text: 'New recommendations for protocols, DWI, and quality indicators.',
         },
         {
-          title: 'Suspendisse potenti gravida',
-          date: '08 Jan 2026',
-          text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate.',
+          title: 'Second-opinion portal with structured feedback',
+          date: '05 Jan 2026',
+          text: 'Standardized reporting and clear recommendations for clinical decisions.',
         },
       ],
     },
@@ -542,6 +697,125 @@ export const content = {
         phoneLabel: 'Phone',
         emailLabel: 'Email',
         linkedinLabel: 'LinkedIn',
+      },
+      timeline: {
+        person: {
+          name: 'Prof. Dr. med. Clemens Kaiser',
+          yearsOrTagline: 'Head of Breast Imaging, UMM',
+          subtitleLine: 'Senior Physician, Department of Radiology and Nuclear Medicine',
+          subtitleLine2: 'Mannheim University Medical Center',
+        },
+        // Timeline events: edit or replace these items as needed.
+        events: [
+          {
+            year: '2010',
+            title: 'Doctoral thesis',
+            text:
+              'Duct-Obstruction-Sign: DCIS vs papilloma in breast MRI (FSU Jena).',
+          },
+          {
+            year: '2011',
+            title: 'Professional societies',
+            text: 'Memberships: DRG, RSNA, and ESR.',
+          },
+          {
+            year: '2013',
+            title: 'Research rotation',
+            text: 'Radiology, University Hospital Jena.',
+          },
+          {
+            year: '2014',
+            title: 'Breast MRI standards',
+            text: 'Focus on standardized reporting and protocol quality.',
+          },
+          {
+            year: '2015',
+            title: 'Quality & reporting',
+            text: 'Focus on diagnostic signs and structured reporting.',
+          },
+          {
+            year: '2016',
+            title: 'Degum member',
+            text: 'German Society for Ultrasound in Medicine.',
+          },
+          {
+            year: '2016',
+            title: 'Reviewer roles',
+            text: 'Started reviewing for peer‑reviewed journals.',
+          },
+          {
+            year: '2016',
+            title: 'Teaching qualification',
+            text: 'Baden-Wuerttemberg certificate (MQ 1 & 2).',
+          },
+          {
+            year: '2017',
+            title: 'Research rotation',
+            text: 'DKFZ Heidelberg, Department of Radiology.',
+          },
+          {
+            year: '2019',
+            title: 'Habilitation',
+            text: 'Optimizing breast MRI on its way to a screening method.',
+          },
+          {
+            year: '2019',
+            title: 'Clinical studies lead',
+            text: 'Principal investigator: USCT and MA-DETECT.',
+          },
+          {
+            year: '2020',
+            title: 'Breast MRI economics',
+            text: 'Cost-effectiveness work on MR-mammography (incl. TK-Study).',
+          },
+          {
+            year: '2021',
+            title: 'Screening evidence',
+            text: 'Abbreviated MRI and dense-breast screening evidence.',
+          },
+          {
+            year: '2021',
+            title: 'Technology & sequences',
+            text: 'Work on accelerated sequences and breast MRI image quality.',
+          },
+          {
+            year: 'Today',
+            title: 'Leadership & expertise',
+            text: 'Head of Breast Imaging, 10,000+ breast MRI reads.',
+          },
+        ],
+      },
+      team: {
+        title: 'Team',
+        subtitle:
+          'A specialized team spanning medical leadership, radiologists, and administrative support.',
+        leadLabel: 'Medical leadership',
+        assistantLabel: 'Administrative assistant (Placeholder)',
+        radiologistsLabel: 'Specialist radiologists (Placeholder)',
+        leadHighlights: [
+          'Extensive experience in breast MRI',
+          'Quality assurance and reporting standards',
+          'Research and teaching in breast imaging',
+          'Interdisciplinary consulting',
+        ],
+        assistantHighlights: [
+          'Scheduling and communication coordination',
+          'Support for courses and events',
+          'Organization of certification materials',
+        ],
+        radiologistHighlights: [
+          'Specialist breast MRI reporting',
+          'Second opinions with structured feedback',
+          'Training and supervision in MR-Max',
+        ],
+        detailsTitle: 'Vita & Publications',
+        detailsIntro:
+          'Full vita information is available in expandable sections. Placeholders will be updated later.',
+        detailsLeadSummary: 'Show full vita for Prof. Kaiser',
+        detailsAssistantSummary: 'Administrative assistant vita (Placeholder)',
+        detailsRadiologistsSummary: 'Specialist radiologists vita (Placeholder)',
+        detailsPlaceholderText:
+          'Placeholder for education, positions, focus areas, and publications.',
       },
       sectionsTitle: 'Curriculum Vitae & Publications',
       sections: [
@@ -599,26 +873,26 @@ export const content = {
           title: 'Publications',
           variant: 'long',
           entries: [
-            '1. Kaiser CG, Peschke P, Baltzer PAT. Axillary lymph node characterization in breast cancer patients using magnetic resonance imaging and diffusion weighted imaging (DWI). Eur J Radiol. 2013;82:2194-2198. Impact factor: 2,518',
-            '2. Kaiser CG, Dietzel M, Fantini L, Baltzer PAT. Evaluation of presurgical breast MRI: are the standards being met? Springerplus. 2014;3:401. Impact factor 0.7',
-            '3. Meyer B, Meyer H, Nordsiek C, et al. A superior vena cava filter device for neurosurgical patients with contraindication to heparin. Surg Neurol Int. 2014;5:113. Impact factor 0.74',
-            '4. Kaiser CG, Borstelmann F, Länger F, et al. Cost effectiveness of MR-mammography as a solitary imaging technique in women with dense breasts: an economic evaluation of the TK-Foundation\'s mammography-screening-cohort. Springerplus. 2015;4:299. Impact factor 0.7',
-            '5. Müller H, Steinbach JP, Malzkorn B, et al. Bevacizumab in combination with radiosurgery in recurrent malignant glioma: analysis of a matched cohort. J Neurooncol. 2015;122:373-379. Impact factor 2.9',
-            '6. Kaiser CG, Borstelmann F, Länger F, et al. Cost-effectiveness of MR-mammography as a solitary imaging technique in women with dense breasts: an economic evaluation. PLoS One. 2015;10:e0141315. Impact factor 3.057',
-            '7. Kaiser CG, Heinrich D, Bahrs A, et al. Evaluation of the BI-RADS categorization of breast ultrasound. SpringerPlus. 2016;5:188. Impact factor 1.63',
-            '8. Kaiser CG, Baltzer PAT, Dietzel M, et al. Diffusion-weighted imaging of the breast: results of a multicenter study. Eur J Radiol. 2016;85(6):974-981. Impact factor 2.524',
-            '9. Kaiser CG, Baltzer PAT, Dietzel M, et al. Dynamic contrast-enhanced MR imaging of the breast: is there any additional value of the first post-contrast series? Eur J Radiol. 2016;85(5):976-983. Impact factor 2.524',
-            '10. Kaiser CG, Renz DM, Baltzer PAT, et al. Implementing a MR-mammography screening program for women with a familial history of breast cancer: breast cancer detection and tumor stage at diagnosis. SpringerPlus. 2016;5:189. Impact factor 1.63',
-            '11. Kaiser CG, Dietzel M, Baltzer PAT. Breast cancer detection and tumor stage at diagnosis in women at familial risk for breast cancer after implementing an MR-mammography screening program: a systematic review and meta-analysis. PLoS One. 2016;11:e0148256. Impact factor 3.057',
-            '12. Kaiser CG, Fuchsjäger MH, Baltzer PAT. Duct-Obstruction-Sign: new MR-mammography sign for the differential diagnosis of duct ectasia and DCIS. Breast J. 2017;23(6):703-709. Impact factor 2.652',
-            '13. Strobel K, Kaiser CG, Paulsen F, et al. MRI results of an intensified surveillance program for women with a familial history of breast cancer. Clin Radiol. 2017;72(7):620.e1-620.e7. Impact factor 2.311',
-            '14. Kaiser CG, Dietzel M, Baltzer PAT. Evaluation of non mass enhancement descriptors in the differential diagnosis of breast lesions: a pilot study. Eur J Radiol. 2017;96:82-91. Impact factor 2.524',
-            '15. Kaiser CG, Kähne T, Häberle L, et al. MR-mammography in the diagnostic assessment of BI-RADS 4 lesions. SpringerPlus. 2017;6:85. Impact factor 1.63',
-            '16. Baltzer PAT, Kaiser CG, Dietzel M, et al. Potential of mammography for the discrimination of breast cancer molecular subtypes. Breast Cancer Res Treat. 2017;166(3):735-745. Impact factor 4.123',
-            '17. Grimm LJ, Anderson AL, Baker JA, Johnson KS, Walsh R, Sykora J, Gutierrez RL, Camp M, Brem RF, Rapelyea J, Weinstein SP, Conant EF, Herschorn SD, Pritchard JW, Synnestvedt MB, Moy L. Breast imaging reporting and data system (BI-RADS) assessment categories and breast cancer diagnosis: a meta-analysis. Eur Radiol. 2017;27(9):3537-3544. Impact factor 4.027',
-            '18. Renz DM, Baltzer PAT, Kaiser CG. Clinical management of radial scars without atypia diagnosed at percutaneous breast biopsy: an online survey and literature review. SpringerPlus. 2018;7:167. Impact factor 1.63',
-            '19. Bayerl C, Kaiser CG, Hummel M, et al. Sensitivity of MRI versus mammography for detecting foci of multifocal, multicentric breast cancer in routine clinical practice. Eur J Radiol. 2018;99:118-124. Impact factor 2.624',
-            '20. Kaiser CG, Baltzer PAT, Bick U, et al. Comparison of different MR imaging protocol paradigms for the detection of suspicious findings in breast MRI: a prospective randomized clinical trial. The Breast. 2019;43:102-109. Impact factor 2.987',
+            '1. Axillary lymph node characterization in breast cancer patients using magnetic resonance mammography: a prospective comparative study with FDG PET-CT and healthy women. J. Krammer, K. Wasser, A. Schnitzer, T. Henzler, S. Schoenberg, Kaiser CG. Eur J Radiol. 2013;82:2194-2198. Impact factor: 2,518',
+            '2. Is "prepectoral edema" a morphologic sign for malignant breast tumors? C.G. Kaiser, M. Herold, P. Baltzer, M. Dietzel, J. Krammer, M. Gajda, O. Camara, S.O. Schoenberg, W.A. Kaiser, K. Wasser. Acad Radiol. 22 (2015) 684-689. Impact factor: 1,966',
+            '3. Magnetic resonance imaging of intraductal papillomas: typical findings and differential diagnosis. M. Dietzel, C.G. Kaiser*, P. Baltzer. J Comput Assist Tomogr. 39 (2015) 176-184. Impact factor: 1,470',
+            '4. DCE-MRI of the breast in a stand-alone setting outside a complementary strategy results of the TK-study. C.G. Kaiser, C. Reich, M. Dietzel, P.A.T. Baltzer, J. Krammer, K. Wasser, S.O. Schoenberg, W.A. Kaiser. Eur Radiol. 25 (2015) 1793-1800. Impact factor: 3,64',
+            '5. Focal transitional mastitis in MR-mammography: preliminary findings. C.G. Kaiser*, M. Dietzel, P. Baltzer, A. Kaiser, T. Henzler, W.A. Kaiser, J. Krammer. European Journal of Radiology Open 3 (2016): 117-22. Impact factor: 3,528',
+            '6. The value of "constant sharpness" as a diagnostic sign in MR-Mammography. C.G. Kaiser, P. Baltzer, A.K. Kaiser, J. Krammer, M. Uder, W.A. Kaiser, M. Dietzel. Eur J Radiol Open. 3 (2016) 236-238. Impact factor: 3,52',
+            '7. Differentiation of ductal carcinoma in situ versus fibrocystic changes by magnetic resonance imaging: are there pathognomonic imaging features? M. Dietzel, C.G. Kaiser*, E. Wenkel, P. Clauser, M. Uder, R. Schulz-Wendtland, P.A. Baltzer. Acta Radiol. (2017) 284185117690420. Impact factor: 2,009',
+            '8. Prognostic Value of "Prepectoral Edema" in MR-Mammography. C.G. Kaiser, M. Herold, J. Krammer, P. Baltzer, M. Gajda, O. Camara, S. Schoenberg, W.A. Kaiser, M. Dietzel. Anticancer Res. 37 (2017) 1989-1995. Impact factor: 1.895',
+            '9. The Assessment of Background Parenchymal Enhancement (BPE) in a High-Risk Population: What Causes BPE? C. You, A. K. Kaiser, P. Baltzer, J. Krammer, Y. Gu, W. Peng, S. Schoenberg, C.G. Kaiser. Translational Oncology 11, No. 2 (2018): 243-49. Impact factor: 3,025',
+            '10. Value of ductal obstruction sign in the differentiation of benign and malignant breast lesions at MR imaging. P.A.T. Baltzer, C.G. Kaiser, M. Dietzel, T. Vag, A.B. Herzog, M. Gajda, O. Camara, W.A. Kaiser. Eur J Radiol. 2010;75:e18-e21. Impact factor: 2,518',
+            '11. Combined reading of Contrast Enhanced and Diffusion Weighted Magnetic Resonance Imaging by using a simple sum score. A. Baltzer, M. Dietzel, C.G. Kaiser, P.A. Baltzer. Eur Radiol. (2015). Impact factor: 3,64',
+            '12. Perirenal Edema as a potential hint towards primary hypertension-Preliminary findings in MRI breast cancer staging. C.G. Kaiser, P. Baltzer, A.K. Kaiser, J. Knaudt, T. Henzler, W.A. Kaiser, M. Dietzel. Eur J Radiol Open. 3 (2016) 123-126. Impact factor: 3,528',
+            '13. Cost-effectiveness of MR-mammography as a solitary imaging technique in women with dense breasts: an economic evaluation of the prospective TK-Study. Froelich MF, Kaiser CG (2020) Eur Radiol 31:967-974. Impact factor: 5.315',
+            '14. Cost-effectiveness of MR-Mammography vs. conventional Mammography in screening patients at intermediate risk of breast cancer - A model-based economic evaluation. Kaiser CG, Dietzel M, Vag T, Froelich MF (2020) Eur J Radiol 136:109355. Impact factor: 2.687',
+            '15. Impact of specificity on cost-effectiveness of screening women at high risk of breast cancer with magnetic resonance imaging, mammography and ultrasound. Kaiser CG, Dietzel M, Vag T, Ruebenthaler J, Froelich M, Tollens F (2021) Eur J Radiol 137:109576. Impact factor: 2.687',
+            '16. Cost-Effectiveness of Digital Breast Tomosynthesis vs. Abbreviated Breast MRI for Screening Women with Intermediate Risk of Breast Cancer-How Low-Cost Must MRI Be? Tollens F, Baltzer PAT, Dietzel M, Ruebenthaler J, Froelich M, Kaiser CG (2021) Cancers 13:1241. Impact factor: 6.639',
+            '17. T2-weighted Imaging of the Breast at 1.5T Using Simultaneous Multi-slice Acceleration. Riffel J, Kannengiesser S, Schoenberg SO, Overhoff D, Riffel P, Kaiser CG (2021) Anticancer Res 41:4423-4429. Impact factor: 2.480',
+            '18. Cost-Effectiveness of MR-Mammography in Breast Cancer Screening of Women With Extremely Dense Breasts After Two Rounds of Screening. Tollens F, Baltzer PAT, Dietzel M, Kunz W, Ruebenthaler J, Froelich M, Kaiser CG (2021) Frontiers in Oncology 11:3449. Impact factor: 6.244',
+            '19. Motion artifacts, lesion type, and parenchymal enhancement in breast MRI: what does really influence diagnostic accuracy? Clauser P, Dietzel M, Weber M, Kaiser CG, Baltzer PAT (2019) Acta Radiol 60:19-27. Impact factor: 1,603',
+            '20. Cost-effectiveness analysis in radiology: methods, results and implications. Froelich MF, Kunz WG, Tollens F, Schnitzer ML, Schoenberg SO, Kaiser CG, Ruebenthaler J, Rofo. (2021) Impact factor: 1,867',
           ],
         },
       ],
@@ -651,7 +925,7 @@ export const content = {
         sections: [
           {
             title: 'Information according to § 5 TMG',
-            text: 'Kaiser MRI Certification GmbH\nMusterstraße 12\n68161 Mannheim\nGermany',
+            text: 'QMRM GmbH\nMusterstraße 12\n68161 Mannheim\nGermany',
           },
           {
             title: 'Represented by',

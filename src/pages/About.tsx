@@ -1,70 +1,125 @@
 import { Section } from '../components/Section'
+import { TimelineHero } from '../components/TimelineHero'
 import { content, sharedContent } from '../content'
 import { useLocale } from '../i18n'
+import timelineHeroImage from '../../Clemenswebseitematerial/eeb104f6-caa9-45d9-ac29-563a7e379e39.png'
 
 export const About = () => {
   const { locale } = useLocale()
   const t = content[locale]
   const professor = sharedContent.professor
+  const team = t.about.team
+  const timeline = t.about.timeline
 
   return (
     <div className="page">
-      <Section title={t.about.profile.title}>
-        <div className="about-grid">
-          <div className="profile-card">
-            <img
-              className="profile-image"
-              src={professor.imageUrl}
-              alt={`Portrait of ${professor.name}`}
-            />
-            <h3>{professor.name}</h3>
-            <p className="profile-role">
-              {locale === 'de' ? professor.titleDe : professor.titleEn}
-            </p>
-            <p>{professor.credentials}</p>
-            <p>{professor.affiliation}</p>
-            <div className="profile-meta">
-              <span>
-                <strong>{t.about.profile.phoneLabel}:</strong> {professor.phone}
-              </span>
-              <span>
-                <strong>{t.about.profile.emailLabel}:</strong>{' '}
-                <a href={`mailto:${professor.email}`}>{professor.email}</a>
-              </span>
-              <span>
-                <strong>{t.about.profile.linkedinLabel}:</strong>{' '}
-                <a href={professor.linkedinUrl} target="_blank" rel="noreferrer">
-                  {professor.linkedinUrl}
-                </a>
-              </span>
+      <TimelineHero
+        backgroundImage={timelineHeroImage}
+        person={timeline.person}
+        events={timeline.events}
+        ariaLabel={locale === 'de' ? 'Vita Zeitachse' : 'Career timeline'}
+        details={
+          <div className="timeline-details">
+            <div className="timeline-details-panel">
+              <span className="timeline-details-label">{team.leadLabel}</span>
+              <p className="timeline-details-role">
+                {locale === 'de' ? professor.titleDe : professor.titleEn}
+              </p>
+              <p className="timeline-details-role">{professor.affiliation}</p>
+              <p className="timeline-details-role">{professor.credentials}</p>
+              <div className="timeline-details-meta">
+                <span>
+                  <strong>{t.about.profile.phoneLabel}:</strong> {professor.phone}
+                </span>
+                <span>
+                  <strong>{t.about.profile.emailLabel}:</strong>{' '}
+                  <a href={`mailto:${professor.email}`}>{professor.email}</a>
+                </span>
+                <span>
+                  <strong>{t.about.profile.linkedinLabel}:</strong>{' '}
+                  <a href={professor.linkedinUrl} target="_blank" rel="noreferrer">
+                    {professor.linkedinUrl}
+                  </a>
+                </span>
+              </div>
+              <ul className="timeline-details-highlights">
+                {team.leadHighlights.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
             </div>
-          </div>
-          <div>
-            <div className="quote-card compact">
-              <p>“{locale === 'de' ? professor.quoteDe : professor.quoteEn}”</p>
-            </div>
-          </div>
-        </div>
-      </Section>
 
-      <Section title={t.about.sectionsTitle}>
-        <div className="about-sections">
-          {t.about.sections.map((section) => {
-            const isLong = 'variant' in section && section.variant === 'long'
-            return (
-              <div
-                key={section.title}
-                className={`about-section${isLong ? ' long-list' : ''}`}
-              >
-                <h3>{section.title}</h3>
+            <details className="timeline-details-toggle">
+              <summary>{team.detailsLeadSummary}</summary>
+              <div className="timeline-details-content">
+                {t.about.sections.map((section) => {
+                  const isLong = 'variant' in section && section.variant === 'long'
+                  return (
+                    <details key={section.title} className="timeline-details-nested">
+                      <summary>{section.title}</summary>
+                      <ul
+                        className={`timeline-details-list${
+                          isLong ? ' scroll' : ''
+                        }`}
+                      >
+                        {section.entries.map((entry) => (
+                          <li key={entry}>{entry}</li>
+                        ))}
+                      </ul>
+                    </details>
+                  )
+                })}
+              </div>
+            </details>
+          </div>
+        }
+      />
+
+      <Section title={team.title} subtitle={team.subtitle}>
+        <div className="team-grid">
+          <article className="team-card">
+            <div className="team-placeholder">AA</div>
+            <span className="team-label">{team.assistantLabel}</span>
+            <h3>{locale === 'de' ? 'Name folgt' : 'Name to be added'}</h3>
+            <ul className="team-highlights">
+              {team.assistantHighlights.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <details className="profile-details">
+              <summary>{team.detailsAssistantSummary}</summary>
+              <div className="profile-details-content">
+                <p>{team.detailsPlaceholderText}</p>
                 <ul>
-                  {section.entries.map((entry) => (
-                    <li key={entry}>{entry}</li>
+                  {team.assistantHighlights.map((item) => (
+                    <li key={item}>{item}</li>
                   ))}
                 </ul>
               </div>
-            )
-          })}
+            </details>
+          </article>
+
+          <article className="team-card">
+            <div className="team-placeholder">FR</div>
+            <span className="team-label">{team.radiologistsLabel}</span>
+            <h3>{locale === 'de' ? 'Team folgt' : 'Team to be added'}</h3>
+            <ul className="team-highlights">
+              {team.radiologistHighlights.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+            <details className="profile-details">
+              <summary>{team.detailsRadiologistsSummary}</summary>
+              <div className="profile-details-content">
+                <p>{team.detailsPlaceholderText}</p>
+                <ul>
+                  {team.radiologistHighlights.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            </details>
+          </article>
         </div>
       </Section>
     </div>
