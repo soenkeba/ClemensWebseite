@@ -1,9 +1,6 @@
-import logoFileUrl from '../Clemenswebseitematerial/Firmenlogo.svg'
-import professorPortraitUrl from '../Clemenswebseitematerial/KIRN_Portrait_Kaiser_Clemens_210802_081.jpg'
-
 export type Locale = 'de' | 'en'
 
-export const logoUrl = logoFileUrl
+export const logoUrl = '/firmenlogo.svg'
 
 export const stockImages = {
   homeHero:
@@ -39,7 +36,7 @@ const shared = {
     credentials: 'Dipl. Kfm. (EMA), B.A.',
     phone: '0621-383-8694',
     email: 'mmz@umm.de',
-    imageUrl: professorPortraitUrl,
+    imageUrl: '/clemens-portrait.jpg',
     linkedinUrl:
       'https://linkedin.com/in/prof-dr-med-clemens-kaiser-1b765212a?trk=people-guest_people_search-card',
     quoteDe:

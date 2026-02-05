@@ -2,7 +2,6 @@ import { Section } from '../components/Section'
 import { TimelineHero } from '../components/TimelineHero'
 import { content, sharedContent } from '../content'
 import { useLocale } from '../i18n'
-import timelineHeroImage from '../../Clemenswebseitematerial/eeb104f6-caa9-45d9-ac29-563a7e379e39.png'
 
 export const About = () => {
   const { locale } = useLocale()
@@ -14,7 +13,7 @@ export const About = () => {
   return (
     <div className="page">
       <TimelineHero
-        backgroundImage={timelineHeroImage}
+        backgroundImage="/clemens-hero.png"
         person={timeline.person}
         events={timeline.events}
         ariaLabel={locale === 'de' ? 'Vita Zeitachse' : 'Career timeline'}
