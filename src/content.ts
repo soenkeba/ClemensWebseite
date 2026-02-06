@@ -342,6 +342,9 @@ export const content = {
         leadLabel: 'Medizinische Leitung',
         assistantLabel: 'Administrative Assistenz (Platzhalter)',
         radiologistsLabel: 'Fachradiolog:innen (Platzhalter)',
+        partnersTitle: 'Kooperationspartner',
+        partnersSubtitle:
+          'Kooperationspartner aus Forschung und klinischer Praxis.',
         leadHighlights: [
           'Langjaehrige Erfahrung in der Mamma-MRT',
           'Qualitaetssicherung und Befundungsstandards',
@@ -357,6 +360,20 @@ export const content = {
           'Spezialisierte Befundung der Mamma-MRT',
           'Zweitmeinungen mit strukturierter Rueckmeldung',
           'Training und Supervision in MR-Max',
+        ],
+        partners: [
+          {
+            name: 'Prof. Dr. med. Ulrike Attenberger',
+            role: 'Direktorin, Institut fuer Klinische Radiologie und Nuklearmedizin',
+            affiliation: 'Universitaetsmedizin Mannheim',
+            focus: [
+              'Leitung klinischer Radiologie und Nuklearmedizin',
+              'Schwerpunkt in onkologischer Bildgebung',
+              'Kooperation in der Mamma-MRT',
+            ],
+            linkLabel: 'Wikipedia',
+            linkUrl: 'https://de.wikipedia.org/wiki/Ulrike_Attenberger',
+          },
         ],
         detailsTitle: 'Vita & Publikationen',
         detailsIntro:
@@ -791,6 +808,9 @@ export const content = {
         leadLabel: 'Medical leadership',
         assistantLabel: 'Administrative assistant (Placeholder)',
         radiologistsLabel: 'Specialist radiologists (Placeholder)',
+        partnersTitle: 'Cooperation partners',
+        partnersSubtitle:
+          'Partners from research and clinical practice.',
         leadHighlights: [
           'Extensive experience in breast MRI',
           'Quality assurance and reporting standards',
@@ -806,6 +826,20 @@ export const content = {
           'Specialist breast MRI reporting',
           'Second opinions with structured feedback',
           'Training and supervision in MR-Max',
+        ],
+        partners: [
+          {
+            name: 'Prof. Dr. med. Ulrike Attenberger',
+            role: 'Director, Institute of Clinical Radiology and Nuclear Medicine',
+            affiliation: 'Mannheim University Medical Center',
+            focus: [
+              'Leadership in clinical radiology and nuclear medicine',
+              'Focus on oncologic imaging',
+              'Collaboration in breast MRI',
+            ],
+            linkLabel: 'Wikipedia',
+            linkUrl: 'https://de.wikipedia.org/wiki/Ulrike_Attenberger',
+          },
         ],
         detailsTitle: 'Vita & Publications',
         detailsIntro:

@@ -415,6 +415,64 @@ p {
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 
+.partners-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.partner-card {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 18px;
+  align-items: start;
+  background: var(--cream);
+  border-radius: var(--radius);
+  border: 1px solid rgba(107, 121, 132, 0.18);
+  box-shadow: var(--shadow);
+  padding: 20px 22px;
+}
+
+.partner-placeholder {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(218, 102, 137, 0.12);
+  color: var(--accent);
+  font-weight: 700;
+  display: grid;
+  place-items: center;
+  letter-spacing: 0.12em;
+}
+
+.partner-body {
+  display: grid;
+  gap: 6px;
+}
+
+.partner-role {
+  margin: 0;
+  font-weight: 600;
+  color: var(--teal-dark);
+}
+
+.partner-affiliation {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.partner-focus {
+  margin: 6px 0 0;
+  padding-left: 18px;
+  display: grid;
+  gap: 6px;
+}
+
+.partner-link {
+  margin-top: 8px;
+  font-weight: 600;
+}
+
 .team-card {
   background: var(--cream);
   padding: 22px;

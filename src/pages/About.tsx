@@ -121,6 +121,34 @@ export const About = () => {
           </article>
         </div>
       </Section>
+
+      <Section title={team.partnersTitle} subtitle={team.partnersSubtitle}>
+        <div className="partners-grid">
+          {team.partners.map((partner) => (
+            <article key={partner.name} className="partner-card">
+              <div className="partner-placeholder">PA</div>
+              <div className="partner-body">
+                <span className="team-label">{partner.name}</span>
+                <p className="partner-role">{partner.role}</p>
+                <p className="partner-affiliation">{partner.affiliation}</p>
+                <ul className="partner-focus">
+                  {partner.focus.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+                <a
+                  className="partner-link"
+                  href={partner.linkUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {partner.linkLabel}
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </Section>
     </div>
   )
 }
