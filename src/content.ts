@@ -280,8 +280,8 @@ export const content = {
           },
           {
             year: '2016',
-            title: 'Degum Mitglied',
-            text: 'Deutsche Gesellschaft fuer Ultraschall in der Medizin.',
+            title: 'Erste Publikation',
+            text: 'Erste wissenschaftliche Publikation zur MR-Mammographie angenommen.',
           },
           {
             year: '2016',
@@ -734,8 +734,8 @@ export const content = {
           },
           {
             year: '2016',
-            title: 'Degum member',
-            text: 'German Society for Ultrasound in Medicine.',
+            title: 'First publication',
+            text: 'First scientific paper on breast MRI accepted.',
           },
           {
             year: '2016',
